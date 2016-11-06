@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 MAINTAINER Fabien Culpo <fabien.culpo@gmail.com>
 
 RUN apt-get update && \
-	apt-get install -y wget apt-transport-https && \
+	apt-get install -y wget apt-transport-https nginx && \
 	echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list && \
 	wget -qO -  https://download.jitsi.org/jitsi-key.gpg.key | apt-key add - && \
 	apt-get update && \
