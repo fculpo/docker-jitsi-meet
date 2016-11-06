@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
 RUN apt-get update && \
-	apt-get install -y wget dnsutils vim telnet && \
+	apt-get install -y wget dnsutils vim telnet apt-transport-https && \
 	echo 'deb https://download.jitsi.org stable/' >> /etc/apt/sources.list.d/jitsi-stable.list && \
   wget -qO -  https://download.jitsi.org/jitsi-key.gpg.key | apt-key add - && \
 	apt-get update && \
