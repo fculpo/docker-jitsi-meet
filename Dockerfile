@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:16.04
 MAINTAINER Fabien Culpo <fabien.culpo@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
