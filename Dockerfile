@@ -21,4 +21,4 @@ EXPOSE 80 443 5347
 EXPOSE 10000:10010/udp
 
 COPY run.sh /run.sh
-CMD /run.sh
+ENTRYPOINT ["/run.sh"]
