@@ -1,5 +1,3 @@
-unset DEBIAN_FRONTEND
-
 export LOG=/var/log/jitsi/jvb.log
 
 if [ ! -f "$LOG" ]; then
